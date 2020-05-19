@@ -1,6 +1,9 @@
+  
 node {
     stage('Checkout') {
-       git url: 'git@github.com:Manis99803/graphsynthesizer.git'
-    }
-    }
+        checkoutConfig.with {
+        branches = [[ name: 'FETCH_HEAD' ]]
+        userRemoteConfigs[0].refspec = '+refs/pull/*/head:refs/remotes/origin/pr/*'
+        }
+   }
 }
