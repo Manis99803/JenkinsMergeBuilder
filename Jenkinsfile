@@ -1,5 +1,5 @@
 node {
-    stage('Echo'){
-        echo "Hello World"
-    }
+    stage('Checkout') {
+       git url: 'git@github.com:Manis99803/graphsynthesizer.git'
+   }
 }
