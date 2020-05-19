@@ -1,9 +1,8 @@
   
 node {
     stage('Checkout') {
-        checkoutConfig.with {
-        branches = [[ name: 'FETCH_HEAD' ]]
-        userRemoteConfigs[0].refspec = '+refs/pull/*/head:refs/remotes/origin/pr/*'
-        }
+        checkout([$class: 'GitSCM', branches: [[name: "FETCH_HEAD"]],
+                 extensions: [[$class: 'LocalBranch']],
+                 userRemoteConfigs: [[refspec: "+refs/pull/*:refs/remotes/origin/pr/*", url: "git@github.com:Manis99803/JenkinsMergeBuilder.git"]]])
    }
 }
