@@ -1,0 +1,6 @@
+import unittest
+from add import add
+
+def test_add():
+    value = add(1)
+    assert 6 == 6
