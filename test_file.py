@@ -3,4 +3,4 @@ from add import add
 
 def test_add():
     value = add(1)
-    assert value == 6
+    assert value == 8
