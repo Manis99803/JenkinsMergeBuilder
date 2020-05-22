@@ -1,5 +1,5 @@
 import unittest
-from add import add
+from add.add import add
 
 def test_add():
     value = add(1)
