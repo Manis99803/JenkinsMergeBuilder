@@ -11,6 +11,6 @@ node{
             sh "ls"
         }
     } finally {
-                junit 'build/reports/**/*.xml'
+                junit 'coverage.xml'
     }
 }
