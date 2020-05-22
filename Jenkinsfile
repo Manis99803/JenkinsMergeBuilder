@@ -26,7 +26,8 @@ node{
     // }
     stage('Status')
     {
-        sh 'echo ${GIT_BRANCH}'
+        sh 'commitId=$(git log --format="%H" -n 2 | tail -1)'
+        sh 'echo ${commitId}'
         // sh 'printenv'
     }
 }
