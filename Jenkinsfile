@@ -26,7 +26,7 @@ node{
     // }
     stage('Status')
     {
-        def commitId=sh('commitId=$(git log --format="%H" -n 2 | tail -1)')
+        sh 'commitId=$(git log --format="%H" -n 2 | tail -1)'
         sh "echo '${commitId}'"
         // sh 'printenv'
     }
