@@ -26,7 +26,7 @@ node{
     // }
     stage('Status')
     {
-        sh '${NODE_NAME}'
+        
         sh 'printenv'
     }
 }
