@@ -15,8 +15,8 @@ node{
                 allowMissing: false,
                 alwaysLinkToLastBuild: false,
                 keepAll: true,
-                reportDir: 'coverage',
-                reportFiles: 'htmlcov/index.html',
+                reportDir: 'htmlcov',
+                reportFiles: 'index.html',
                 reportName: "RCov Report"
             ])
         }
