@@ -11,6 +11,6 @@ node{
             sh "ls"
         }
     } finally {
-                junit 'coverage.xml'
+                junit 'output.xml'
     }
 }
