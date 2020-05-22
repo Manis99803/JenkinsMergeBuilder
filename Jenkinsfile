@@ -27,6 +27,6 @@ node{
     stage('Status')
     {
         sh '${GIT_BRANCH}'
-        sh 'printenv'
+        // sh 'printenv'
     }
 }
