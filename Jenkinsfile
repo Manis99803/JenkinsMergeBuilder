@@ -20,7 +20,6 @@ node{
                 reportName: "RCov Report"
             ])
         }
-    }
     } finally {
                 junit 'output.xml'
     }
