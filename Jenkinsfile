@@ -7,7 +7,7 @@ node{
             sh "python3 -m venv env"
             sh "source env/bin/activate"
             sh "pip3 install pytest"
-            sh "pytest --cov=add  --cov-report=xml test_file.py" 
+            sh "pytest --cov=add  --junitxml=output.xml test_file.py" 
             sh "ls"
         }
     } finally {
