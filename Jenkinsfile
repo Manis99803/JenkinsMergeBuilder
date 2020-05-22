@@ -7,7 +7,8 @@ node{
             sh "python3 -m venv env"
             sh "source env/bin/activate"
             sh "pip3 install pytest"
-            sh "pytest test_file.py" 
+            sh "pytest --cov=add  --cov-report=xml test_file.py" 
+            sh "ls"
         }
     } finally {
                 junit 'build/reports/**/*.xml'
